@@ -4,7 +4,7 @@ class PrefixSum{
         
         int[] arr={54,23,67,89,67,12};
         
-        int[] prefix=arr;
+        int[] prefix=new int[arr.length];
 
         prefix[0]=arr[0];
         for (int i = 1; i < arr.length; i++) {
