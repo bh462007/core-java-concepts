@@ -22,12 +22,17 @@ class Employee_encaps{
     public double salary(){
         return salary;
     }
+    public void displayEmployee(){
+        System.out.println("ID: "+id+" Name: "+name+" Salary: "+salary);
+    }
 
     public static void main(String[] args) {
         Employee_encaps emp1=new Employee_encaps();
         emp1.setId(35);
         emp1.setName("Bhagyashri");
         emp1.setSalary(99000);
+
+        emp1.displayEmployee();
 
         System.out.println("ID: "+emp1.id+"\nName: "+emp1.name+"\nSalary: "+emp1.salary);
     }

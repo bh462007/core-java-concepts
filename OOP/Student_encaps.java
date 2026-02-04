@@ -22,12 +22,17 @@ class Student_encaps{
     public int getMarks(){
         return marks;
     }
+    public void printDetails(){
+        System.out.println("Roll no: "+rollno+" Name: "+name+" Marks: "+marks);
+    }
 
     public static void main(String[] args) {
         Student_encaps std1=new Student_encaps();
         std1.setMarks(89);
         std1.setName("Bhagyashri");
         std1.setRollno(225135);
+
+        std1.printDetails();
 
         System.out.println("Name: "+std1.getName());
         System.out.println("Roll: "+std1.getRollno());
